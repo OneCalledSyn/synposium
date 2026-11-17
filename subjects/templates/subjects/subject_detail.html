@@ -1,0 +1,14 @@
+<!-- subjects/templates/subjects/subject_detail.html -->
+
+{% extends "base.html" %}
+
+{% block page_content %}
+<h1>{{ subject.title }}</h1>
+<div class="row">
+    <div class="col-md-4">
+        <h5>About the subject:</h5>
+        <p>{{ subject.description }}</p>
+        <br>
+    </div>
+</div>
+{% endblock page_content %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books for {{ topic.name }}</title>
+</head>
+<body>
+    <h1>Books for {{ topic.name }}</h1>
+    <ul>
+        {% for book in books %}
+            <li><a href="{% url 'book_detail' book.id %}">{{ book.title }}</a> by {{ book.author }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

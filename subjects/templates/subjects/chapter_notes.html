@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes for {{ chapter.title }}</title>
+</head>
+<body>
+    <h1>Notes for Chapter {{ chapter.number }}: {{ chapter.title }}</h1>
+    <ul>
+        {% for note in notes %}
+            <li>{{ note.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

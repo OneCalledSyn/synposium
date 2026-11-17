@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Topics for {{ subject.name }}</title>
+</head>
+<body>
+    <h1>Topics for {{ subject.name }}</h1>
+    <ul>
+        {% for topic in topics %}
+            <li><a href="{% url 'book_list' topic.id %}">{{ topic.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
